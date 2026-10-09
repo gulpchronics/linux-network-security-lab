@@ -1,3 +1,3 @@
-alert icmp 192.168.10.0/24 any -> 192.168.20.0/24 any (msg:"LAB ICMP traffic from Client-A to Client-B network"; sid:1000001; rev:1;)
+##alert icmp 192.168.10.0/24 any -> 192.168.20.0/24 any (msg:"LAB ICMP traffic from Client-A to Client-B network"; sid:1000001; rev:1;)
 
-alert tcp 192.168.10.0/24 any -> 192.168.20.0/24 22 (msg:"LAB SSH connection from Client-A to Client-B"; flow:to_server; flags:S; sid:1000002; rev:1;)
+##alert tcp 192.168.10.0/24 any -> 192.168.20.0/24 22 (msg:"LAB SSH connection from Client-A to Client-B"; flow:to_server; flags:S; sid:1000002; rev:1;)
